@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Site</title>
+        <meta name="description" content="semantic html template">
+        <meta name="author" content="my Site">
+        <!--Open Graph protocol-->
+        <meta property="og:title" content="My Site">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://www.mysite.com">
+        <meta property="og:description" content="semantic html template">
+        <meta property="og:image" content="image.png">
+        <meta name="og:locale" content="en_US" />
+        <!--Setting icon for browser tab-->
+        <link rel="icon" href="./favicon.ico">
+        <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="./apple-touch-icon.png">
+
+        <link rel="stylesheet" href="./CSS/style.css">
+        <link rel="stylesheet" href="/Bootstrap Project/coder/project/bootstrap.min.css">
+    </head>
+    <body>
+        <header>
+            <!--Add your website name or logo here
+            <p>Header</p>
+            -->
+            <div>
+                <p style="background-color: gray; color: white;margin-right: auto; text-align: right;padding: 15px;">Content On Top</p>
+            </div>
+            <a href="index.html">
+            <img src="/HTML&CSS/SEMANTIC_TAGS/logo.png" style="width: 60px;height: 60px;float: left;padding: 5px;">
+            </a>
+        </header>
+        <nav>
+            <!--Add your website navigation here-->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html">Home</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                   <!-- <span class="navbar-toggler-icon"></span> -->
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">About</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Services
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Gallery</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                      </li>
+                      
+                      <!--<li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                      </li>
+                    -->
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </nav>
+        <main>
+            <!--Add your main content here
+            <p>Heading</p>
+            -->
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/IMAGES/headerimage.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/IMAGES/headerimage.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/IMAGES/headerimage.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+        </main>
+        <footer>
+            <!--Add copyright notice and other footer content here-->
+            <div class="container">
+                <div class="row">
+                    <div id="more" class="col-12-lg-6">
+                        <h5>My Site</h5>
+                        <p>This is a trial page. learning how to
+                            develop website using html and css
+                        </p>
+                    </div>
+                </div>
+                    <div class="row">
+                        <div id="more" class="col-12-lg-6">
+                            <h5>Links</h5>
+                            <ul>
+                                <li><a href="#Home">Home</a></li>
+                                <li><a href="#About">About</a></li>
+                                <li><a href="#Services">Services</a></li>
+                                <li><a href="#Gallery">Gallery</a></li>
+                                <li><a href="#Contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="more" class="col-12-lg-6">
+                            <h5>Services</h5>
+                            <ul>
+                                <li><a href="#gold">Gold</a></li>
+                                <li><a href="#diamond">Diamon</a></li>
+                                <li><a href="#bronze">Bronze</a></li>
+                                <li><a href="#others">Others</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--<div class="copyright">
+                        <div id="copy2" class="col-12-lg-6">
+                           <p>Copyright@2023 Tekinsightghana. All rights reserved.
+                        </div>
+                    </div>-->
+            </div>
+        </footer>
+        <script src="./JS/script.js"></script>
+        <script src="/Bootstrap Project/coder/project/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
